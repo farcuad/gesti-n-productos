@@ -24,3 +24,7 @@ Este es el cliente web para el Sistema de Gestión de Productos Multi-tenant. Un
 ## Configuración del Entorno
 
 Para ejecutar este proyecto localmente, asegúrate de tener instalado [Node.js](https://nodejs.org/).
+
+# Está en línea, el deploy es en firebase
+
+URL del sistema: https://gestion-productos-86199.web.app/
