@@ -122,7 +122,7 @@ function SalesHistory() {
         <div className="row g-3 mb-4">
           <div className="col-md-3">
             <div className="card border-0 shadow-sm bg-dark text-white p-3 rounded-4">
-              <div className="small text-uppercase opacity-75 fw-bold text-truncate">Total Filtrado (USD)</div>
+              <div className="small text-uppercase opacity-75 fw-bold text-truncate">Ganancias (USD)</div>
               <h2 className="fw-bold mb-0">${totalGeneralUSD.toLocaleString('en-US', { minimumFractionDigits: 2 })}</h2>
             </div>
           </div>

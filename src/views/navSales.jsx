@@ -199,11 +199,11 @@ function SalesManager() {
                         <td className="ps-4">
                           <div className="d-flex align-items-center">
                             <img 
-                              src={p.image?.startsWith('http') ? p.image : `https://u2.rsgve.com/storage/${p.image}`} 
+                              src={`https://u2.rsgve.com${p.image_url}`} 
                               alt="" 
                               className="rounded me-3 border" 
                               style={{width: '45px', height: '45px', objectFit: 'cover'}}
-                              onError={(e) => e.target.src = 'https://via.placeholder.com/45?text=NA'}
+                              onError={(e) => e.target.src = '/no-image.png'}
                             />
                             <div>
                               <div className="fw-bold">{p.name}</div>
