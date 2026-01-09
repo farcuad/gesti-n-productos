@@ -255,7 +255,7 @@ function Nav() {
                       <tr key={p.id}>
                         <td>
                           <img 
-                            src={p.image?.startsWith('http') ? p.image : `https://u2.rsgve.com/storage/${p.image}`} 
+                            src={p.image_url || `https://u2.rsgve.com/storage/${p.image}`} 
                             alt={p.name} 
                             className="rounded border"
                             style={{ width: "45px", height: "45px", objectFit: "cover" }}
