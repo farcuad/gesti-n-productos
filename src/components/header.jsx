@@ -30,7 +30,7 @@ function Header({ toggleAside }) {
   const fetchLowStock = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`${API_URL}/lowstock`, {
+      const response = await fetch(`${API_URL}/low-stock`, {
         headers: {
           "Accept": "application/json",
           "Authorization": `Bearer ${token}`
@@ -117,17 +117,7 @@ function Header({ toggleAside }) {
                     <small>Todo el stock está en niveles óptimos</small>
                   </div>
                 )}
-              </div>
-              {lowStockAlerts.length > 0 && (
-                <div className="p-2 bg-light text-center border-top">
-                  <button 
-                    className="btn btn-sm btn-link text-decoration-none fw-bold" 
-                    onClick={() => { navigate("/inventory"); setOpenNotifications(false); }}
-                  >
-                    Ir al Inventario
-                  </button>
-                </div>
-              )}
+              </div>  
             </div>
           )}
         </div>
