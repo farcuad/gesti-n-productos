@@ -160,6 +160,11 @@ const Login = () => {
                                 </button>
                             </div>
                             
+                            <div className="col-12 text-center">
+                                <p className="text-muted small">
+                                    <button type="button" className="btn btn-link fw-bold text-decoration-none p-0" onClick={() => navigate("/send-email")}>Recuperar Contraseña</button>
+                                </p>
+                            </div>
                             <div className="col-12 text-center mt-4">
                                 <p className="text-muted small">
                                     ¿Aún no tienes una tienda?{""} <br />
